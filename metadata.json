@@ -1,0 +1,6 @@
+{
+  "name": "FlowAI",
+  "description": "Voice dictation and intelligent text cleanup workspace powered by Whisper and Llama.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
