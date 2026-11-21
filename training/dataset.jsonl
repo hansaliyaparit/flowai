@@ -1,0 +1,53 @@
+{"style":"Professional","raw":"um please send the financial report to the team by like tomorrow morning","cleaned":"Please send the financial report to the team by tomorrow morning."}
+{"style":"Professional","raw":"we need to uh review the pull request before deploying to production","cleaned":"We need to review the pull request before deploying to production."}
+{"style":"Professional","raw":"can you schedule a sync with the client for Monday no wait Tuesday at 10am","cleaned":"Please schedule a sync with the client for Tuesday at 10:00 AM."}
+{"style":"Professional","raw":"the database migration like completed without any critical errors","cleaned":"The database migration completed without any critical errors."}
+{"style":"Professional","raw":"so basically our quarterly metrics showed strong improvement across all regions","cleaned":"Our quarterly metrics showed strong improvement across all regions."}
+{"style":"Professional","raw":"please make sure to update the api documentation with the new endpoint","cleaned":"Please ensure the API documentation is updated with the new endpoint."}
+{"style":"Professional","raw":"the team agreed on the architectural proposal you know yesterday afternoon","cleaned":"The team agreed on the architectural proposal yesterday afternoon."}
+{"style":"Professional","raw":"um we observed zero downtime during the database upgrade","cleaned":"We observed zero downtime during the database upgrade."}
+{"style":"Professional","raw":"can you invite the engineering leads to the architecture review meeting","cleaned":"Please invite the engineering leads to the architecture review meeting."}
+{"style":"Professional","raw":"the payment gateway integration is like ready for staging verification","cleaned":"The payment gateway integration is ready for staging verification."}
+{"style":"Professional","raw":"matlab we should prepare the slides for the executive demo","cleaned":"We should prepare the presentation slides for the executive demonstration."}
+{"style":"Professional","raw":"sun yaar please confirm the release date with the product manager","cleaned":"Please confirm the release date with the product manager."}
+{"style":"Professional","raw":"actually the security audit discovered no high severity vulnerabilities","cleaned":"The security audit discovered no high-severity vulnerabilities."}
+{"style":"Professional","raw":"first run the tests second build the container and third deploy to cluster","cleaned":"1. Run the tests.\n2. Build the container.\n3. Deploy to the cluster."}
+{"style":"Professional","raw":"we implemented rate limiting to protect the public endpoints against abuse","cleaned":"We implemented rate limiting to protect public endpoints against abuse."}
+{"style":"Professional","raw":"the mobile app bundle size was reduced by twenty percent","cleaned":"The mobile application bundle size was reduced by twenty percent."}
+{"style":"Professional","raw":"um let us verify the cache invalidation logic before merging the pr","cleaned":"Let us verify the cache invalidation logic before merging the pull request."}
+{"style":"Professional","raw":"the notification service delivers emails within five seconds of trigger","cleaned":"The notification service delivers emails within five seconds of trigger."}
+{"style":"Professional","raw":"we should establish clear guidelines for code reviews across teams","cleaned":"We should establish clear guidelines for code reviews across teams."}
+{"style":"Professional","raw":"please review the sprint backlog before our planning session at two","cleaned":"Please review the sprint backlog before our planning session at 2:00 PM."}
+{"style":"Casual","raw":"hey um let us catch up tomorrow at 3 actually 4pm to talk about the project","cleaned":"Hey, let's catch up tomorrow at 4:00 PM to talk through the project."}
+{"style":"Casual","raw":"yaar the new design looks super clean and modern","cleaned":"The new design looks super clean and modern!"}
+{"style":"Casual","raw":"we should like totally grab lunch together after the standup","cleaned":"We should totally grab lunch together after standup."}
+{"style":"Casual","raw":"check this out yaar it works on both chrome and safari now","cleaned":"Check this out, it works on both Chrome and Safari now!"}
+{"style":"Casual","raw":"um i think you know what the user is trying to do here","cleaned":"I think you know what the user is trying to do here."}
+{"style":"Casual","raw":"can you share your screen na so we can debug together","cleaned":"Can you share your screen so we can debug together?"}
+{"style":"Casual","raw":"haan i will check the server logs right now","cleaned":"Yeah, I'll check the server logs right now."}
+{"style":"Casual","raw":"it was like super confusing at first but now it makes total sense","cleaned":"It was super confusing at first, but now it makes total sense."}
+{"style":"Casual","raw":"hold on yaar let me pull the latest changes from main branch","cleaned":"Hold on, let me pull the latest changes from the main branch."}
+{"style":"Casual","raw":"actually can you send me that figma link again","cleaned":"Can you send me that Figma link again?"}
+{"style":"Casual","raw":"so basically we are all set for the release tomorrow","cleaned":"We're pretty much all set for the release tomorrow!"}
+{"style":"Casual","raw":"give me like five minutes to finish this review na","cleaned":"Give me five minutes to finish this review."}
+{"style":"Casual","raw":"the build passed on my machine so we should be good to go","cleaned":"The build passed on my machine, so we should be good to go!"}
+{"style":"Casual","raw":"matlab everything is working totally fine now","cleaned":"Everything is working totally fine now."}
+{"style":"Casual","raw":"hey can you review my branch whenever you get a chance","cleaned":"Hey, can you review my branch whenever you get a chance?"}
+{"style":"Simple","raw":"so basically the database server crashed and we need to restart it now","cleaned":"The database server crashed. Restart it now."}
+{"style":"Simple","raw":"um send the invoice to finance today please","cleaned":"Send the invoice to finance today."}
+{"style":"Simple","raw":"we need three more days to finish the feature","cleaned":"We need three more days to finish the feature."}
+{"style":"Simple","raw":"the test failed on line forty two","cleaned":"The test failed on line 42."}
+{"style":"Simple","raw":"meet at 3 no wait 4pm in room b","cleaned":"Meet at 4:00 PM in Room B."}
+{"style":"Simple","raw":"update the documentation with the new url","cleaned":"Update the documentation with the new URL."}
+{"style":"Simple","raw":"check the server logs for error code five hundred","cleaned":"Check server logs for error 500."}
+{"style":"Simple","raw":"the release is scheduled for tomorrow morning","cleaned":"The release is scheduled for tomorrow morning."}
+{"style":"Simple","raw":"add tests for the checkout flow","cleaned":"Add tests for the checkout flow."}
+{"style":"Simple","raw":"turn on dark mode in settings","cleaned":"Turn on dark mode in settings."}
+{"style":"Professional","raw":"um can we verify the database backup restore procedure this afternoon","cleaned":"Can we verify the database backup restore procedure this afternoon?"}
+{"style":"Professional","raw":"the kubernetes ingress controller was upgraded to the latest patch release","cleaned":"The Kubernetes ingress controller was upgraded to the latest patch release."}
+{"style":"Professional","raw":"actually we should benchmark the response latency under concurrent traffic","cleaned":"We should benchmark the response latency under concurrent traffic."}
+{"style":"Professional","raw":"first review the pull request second run unit tests and third request approval","cleaned":"1. Review the pull request.\n2. Run unit tests.\n3. Request approval."}
+{"style":"Casual","raw":"sun yaar we finished the frontend integration earlier than expected","cleaned":"We finished the frontend integration earlier than expected!"}
+{"style":"Casual","raw":"matlab we can push this feature live today itself","cleaned":"We can push this feature live today itself."}
+{"style":"Simple","raw":"restart the pod on the worker node","cleaned":"Restart the pod on the worker node."}
+{"style":"Simple","raw":"deploy version two to staging environment","cleaned":"Deploy version 2 to the staging environment."}
