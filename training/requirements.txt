@@ -4,7 +4,8 @@ transformers>=4.40.0
 peft>=0.10.0
 accelerate>=0.29.0
 datasets>=2.18.0
-bitsandbytes>=0.43.0
+# Optional: bitsandbytes (Linux/Colab CUDA 4-bit quantization only)
+# bitsandbytes>=0.43.0
 
 # Local FastAPI serving dependencies
 fastapi>=0.110.0
