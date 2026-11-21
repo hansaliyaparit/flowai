@@ -139,6 +139,8 @@ export const DictatePage: React.FC<DictatePageProps> = ({
           language: languageRef.current,
           durationMs: recording.durationMs,
           createdAt: Date.now(),
+          approved: false,
+          provider: (cleanupData.provider as 'groq' | 'local') || 'groq',
         });
       } catch (err) {
         const message =

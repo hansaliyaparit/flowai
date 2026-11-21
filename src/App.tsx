@@ -7,6 +7,7 @@ import { HistoryPage } from './pages/HistoryPage';
 import { DictionaryPage } from './pages/DictionaryPage';
 import { SnippetsPage } from './pages/SnippetsPage';
 import { SettingsPage } from './pages/SettingsPage';
+import { ModelLabPage } from './pages/ModelLabPage';
 import {
   loadDictionary,
   loadHistory,
@@ -131,6 +132,16 @@ export default function App() {
     saveHistory([]);
   };
 
+  const handleImportHistory = useCallback((imported: DictationEntry[]) => {
+    setHistory((prev) => {
+      const existingIds = new Set(prev.map((e) => e.id));
+      const filteredNew = imported.filter((e) => !existingIds.has(e.id));
+      const next = [...filteredNew, ...prev];
+      saveHistory(next);
+      return next;
+    });
+  }, []);
+
   // Dictionary handlers
   const handleAddWord = (word: string) => {
     setDictionary((prev) => {
@@ -217,6 +228,8 @@ export default function App() {
               onDeleteEntry={handleDeleteHistory}
               onClearAll={handleClearHistory}
               onGoToDictate={() => setActivePage('dictate')}
+              onUpdateEntry={handleUpdateDictation}
+              onImportEntries={handleImportHistory}
             />
           )}
 
@@ -242,6 +255,8 @@ export default function App() {
               onUpdateSettings={handleUpdateSettings}
             />
           )}
+
+          {activePage === 'lab' && <ModelLabPage />}
         </div>
       </main>
 

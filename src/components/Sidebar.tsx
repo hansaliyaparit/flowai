@@ -8,6 +8,7 @@ import {
   Sun,
   Moon,
   AudioLines,
+  Brain,
 } from 'lucide-react';
 import type { PageId, ThemeMode } from '../types';
 import { PWAInstallButton } from './PWAInstallButton';
@@ -30,6 +31,7 @@ const NAV_ITEMS: Array<{ id: PageId; label: string; icon: React.ComponentType<{ 
   { id: 'history', label: 'History', icon: History },
   { id: 'dictionary', label: 'Dictionary', icon: BookA },
   { id: 'snippets', label: 'Snippets', icon: Zap },
+  { id: 'lab', label: 'Model Lab', icon: Brain },
   { id: 'settings', label: 'Settings', icon: Settings },
 ];
 

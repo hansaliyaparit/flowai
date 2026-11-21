@@ -27,6 +27,8 @@ const __dirname = path.dirname(__filename);
 
 const PORT = Number(process.env.PORT) || 3000;
 const GROQ_BASE_URL = 'https://api.groq.com/openai/v1';
+const CLEANUP_PROVIDER = (process.env.CLEANUP_PROVIDER || 'groq').toLowerCase();
+const LOCAL_CLEANUP_URL = process.env.LOCAL_CLEANUP_URL || 'http://localhost:8000/cleanup';
 
 const app = express();
 
@@ -243,6 +245,33 @@ app.post('/api/cleanup', async (req, res) => {
     });
   }
 
+  // Feature 4: Support local model server (CLEANUP_PROVIDER=local) with automatic fallback to Groq
+  if (CLEANUP_PROVIDER === 'local') {
+    try {
+      const localController = new AbortController();
+      const localTimeout = setTimeout(() => localController.abort(), 6000);
+      const localRes = await fetch(LOCAL_CLEANUP_URL, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ style, raw: rawText.trim() }),
+        signal: localController.signal,
+      });
+      clearTimeout(localTimeout);
+
+      if (localRes.ok) {
+        const localData = await localRes.json();
+        const cleaned = typeof localData.cleaned === 'string' ? localData.cleaned.trim() : '';
+        if (cleaned) {
+          const cleanedText = applyDeterministicPostProcessing(cleaned, snippets);
+          return res.json({ cleanedText, provider: 'local' });
+        }
+      }
+      console.warn('Local cleanup server returned empty/error; falling back to Groq Cloud...');
+    } catch (localErr) {
+      console.warn(`Local cleanup server (${LOCAL_CLEANUP_URL}) unreachable (${localErr.message}); falling back to Groq Cloud.`);
+    }
+  }
+
   try {
     const systemPrompt = buildCleanupSystemPrompt({ style, dictionary, snippets });
 
@@ -314,11 +343,12 @@ app.post('/api/cleanup', async (req, res) => {
     if (typeof llmText !== 'string' || !llmText.trim()) {
       return res.json({
         cleanedText: applyDeterministicPostProcessing(rawText, snippets),
+        provider: 'groq',
       });
     }
 
     const cleanedText = applyDeterministicPostProcessing(llmText, snippets);
-    return res.json({ cleanedText });
+    return res.json({ cleanedText, provider: 'groq' });
   } catch (err) {
     console.error('Error in /api/cleanup:', err);
     return res.status(500).json({

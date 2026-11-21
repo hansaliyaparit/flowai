@@ -4,7 +4,7 @@ export type LanguageCode = 'auto' | 'en' | 'hi' | 'gu';
 
 export type ThemeMode = 'light' | 'dark' | 'system';
 
-export type PageId = 'dictate' | 'history' | 'dictionary' | 'snippets' | 'settings';
+export type PageId = 'dictate' | 'history' | 'dictionary' | 'snippets' | 'settings' | 'lab';
 
 export interface DictationEntry {
   id: string;
@@ -14,6 +14,8 @@ export interface DictationEntry {
   language: LanguageCode;
   durationMs: number;
   createdAt: number;
+  approved?: boolean;
+  provider?: 'groq' | 'local';
 }
 
 export interface SnippetItem {
