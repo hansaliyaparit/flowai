@@ -4,9 +4,9 @@
 {"words":["yeh","command","ka","matlab","clean","build","hai"],"labels":[0,0,0,0,0,0,0]}
 {"words":["matlab","can","you","send","the","updated","link"],"labels":[1,0,0,0,0,0,0]}
 {"words":["apka","matlab","samajh","aaya","mujhe"],"labels":[0,0,0,0,0]}
-{"words":["we","need","matlab","three","more","days"],"labels":[0,0,1,0,0,0,0]}
+{"words":["we","need","matlab","three","more","days"],"labels":[0,0,1,0,0,0]}
 {"words":["sahi","matlab","nikalna","zaroori","hai"],"labels":[0,0,0,0,0]}
-{"words":["matlab","everything","is","working","fine","now"],"labels":[1,0,0,0,0,0,0]}
+{"words":["matlab","everything","is","working","fine","now"],"labels":[1,0,0,0,0,0]}
 {"words":["us","line","ka","matlab","explain","karo"],"labels":[0,0,0,0,0,0]}
 {"words":["sun","yaar","we","need","to","merge","this","pr"],"labels":[0,1,0,0,0,0,0,0]}
 {"words":["mera","yaar","college","me","padhta","hai"],"labels":[0,0,0,0,0,0]}
@@ -41,10 +41,10 @@
 {"words":["actually","can","you","resend","the","zoom","invite"],"labels":[1,0,0,0,0,0,0]}
 {"words":["this","microservice","is","actually","working","very","fast"],"labels":[0,0,0,0,0,0,0]}
 {"words":["actually","i","think","we","missed","one","test"],"labels":[1,0,0,0,0,0,0]}
-{"words":["the","memory","leak","was","actually","in","the","cache"],"labels":[0,0,0,0,0,0,0,0,0]}
+{"words":["the","memory","leak","was","actually","in","the","cache"],"labels":[0,0,0,0,0,0,0,0]}
 {"words":["actually","let","us","rollback","to","previous","commit"],"labels":[1,0,0,0,0,0,0]}
 {"words":["the","latency","is","actually","lower","than","before"],"labels":[0,0,0,0,0,0,0]}
-{"words":["actually","we","have","enough","budget","for","gpu"],"labels":[1,0,0,0,0,0,0,0]}
+{"words":["actually","we","have","enough","budget","for","gpu"],"labels":[1,0,0,0,0,0,0]}
 {"words":["it","is","actually","documented","in","readme"],"labels":[0,0,0,0,0,0]}
 {"words":["actually","the","meeting","starts","in","ten","minutes"],"labels":[1,0,0,0,0,0,0]}
 {"words":["the","query","actually","uses","an","indexed","scan"],"labels":[0,0,0,0,0,0,0]}
